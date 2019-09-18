@@ -82,7 +82,7 @@ function loadQuestions(){
     + "<input type='radio' name='answer0' value='2'>" + "<label>" + questions[0].answers[2] + "</label>"
     + "<input type='radio' name='answer0' value='3'>" + "<label>" + questions[0].answers[3] + "</label><br><br>");
     //question 2
-    $(".question1").html("<h1>" + questions[0].question + "</h1>");
+    $(".question1").html("<h1>" + questions[1].question + "</h1>");
     $(".answers1").html("<input type='radio' name='answer1' value='0'>" + "<label>" + questions[1].answers[0] + "</label>"
     + "<input type='radio' name='answer1' value='1'>" + "<label>" + questions[1].answers[1] + "</label>"
     + "<input type='radio' name='answer1' value='2'>" + "<label>" + questions[1].answers[2] + "</label>"
