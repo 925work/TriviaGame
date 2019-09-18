@@ -1,4 +1,4 @@
-var timeLeft = 80;
+var timeLeft = 70;
 var correct = 0;
 var wrong = 0;
 var unanswered = 0;
@@ -47,6 +47,7 @@ var questions = [
 ];
 
 $(".startButton").on("click", start);
+$(".tryAgain").on("click", tryAgain);
 
 function start(){
     clearInterval(intervalID);
@@ -119,6 +120,7 @@ function loadQuestions(){
     + "<input type='radio' name='answer1' value='1'>" + "<label>" + questions[7].answers[1] + "</label>"
     + "<input type='radio' name='answer1' value='2'>" + "<label>" + questions[7].answers[2] + "</label>"
     + "<input type='radio' name='answer1' value='3'>" + "<label>" + questions[7].answers[3] + "</label><br><br>");
+    $(".questionsContainer").append("<button class='submit'>" + "SUBMIT" +"</button>")
 }
 
 function tryAgain() {
@@ -126,5 +128,10 @@ function tryAgain() {
 }
 
 function showResults (){
-
+    $(".timerContainer").hide();
+    $(".questionsContainer").hide();
+    $(".rightWrongContainer").show();
+    $(".correct").html("Correct answers: " + correct + "<br>");
+    $(".wrong").html("Wrong answers: " + wrong +"<br>");
+    $(".unanswered").text("Unanswered questions: " + unanswered);
 }

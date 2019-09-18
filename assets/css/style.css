@@ -36,6 +36,20 @@ body {
     padding: 20px;
 }
 
+.tryAgain{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 14px;
+}
+
+.submit{
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 14px;
+}
+
 .timerContainer{
     background-color:darkred;
     width: 93%;
@@ -44,6 +58,17 @@ body {
     color: white;
     font-size: 60px;
     padding-top: 20px;
+}
+
+.rightWrongContainer{
+    background-color:darkred;
+    width: 93%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 40px;
+    padding-top: 20px;
+    display: none;
 }
 
 .questionsContainer{
