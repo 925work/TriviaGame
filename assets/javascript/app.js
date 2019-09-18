@@ -1,4 +1,4 @@
-var timeLeft = 70;
+var timeLeft = 60;
 var correct = 0;
 var wrong = 0;
 var unanswered = 0;
@@ -65,6 +65,7 @@ function decrement(){
     if(timeLeft===0){
         stop();
         scoring();
+        showResults();
     }
 }
 
@@ -124,6 +125,7 @@ function loadQuestions(){
     + "<input type='radio' name='answer7' value='3'>" + "<label>" + questions[7].answers[3] + "</label><br><br>");
     $(".questionsContainer").append("<button class='submit'>" + "SUBMIT" +"</button>")
     $(".submit").on("click", function(){
+        stop();
         scoring();
         showResults();
     });
@@ -133,7 +135,67 @@ function scoring(){
     var userAnswer0 = $("input[name='answer0']:checked").val();
     if(userAnswer0 === undefined){
         unanswered++;
-    } 
+    } else if(userAnswer0 == questions[0].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer1 = $("input[name='answer1']:checked").val();
+    if(userAnswer1 === undefined){
+        unanswered++;
+    } else if(userAnswer1 == questions[1].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer2 = $("input[name='answer2']:checked").val();
+    if(userAnswer2 === undefined){
+        unanswered++;
+    } else if(userAnswer2 == questions[2].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer3 = $("input[name='answer3']:checked").val();
+    if(userAnswer3 === undefined){
+        unanswered++;
+    } else if(userAnswer3 == questions[3].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer4 = $("input[name='answer4']:checked").val();
+    if(userAnswer4 === undefined){
+        unanswered++;
+    } else if(userAnswer4 == questions[4].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer5 = $("input[name='answer5']:checked").val();
+    if(userAnswer5 === undefined){
+        unanswered++;
+    } else if(userAnswer5 == questions[5].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer6 = $("input[name='answer6']:checked").val();
+    if(userAnswer6 === undefined){
+        unanswered++;
+    } else if(userAnswer6 == questions[6].right){
+        correct++;
+    }else{
+        wrong++;
+    }
+    var userAnswer7 = $("input[name='answer7']:checked").val();
+    if(userAnswer7 === undefined){
+        unanswered++;
+    } else if(userAnswer7 == questions[7].right){
+        correct++;
+    }else{
+        wrong++;
+    }
 }
 
 function tryAgain() {
