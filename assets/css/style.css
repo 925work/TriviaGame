@@ -4,14 +4,14 @@ body {
 
 .titleContainer{
     background-color:darkred;
-    width: 85%;
+    width: 93%;
     text-align: center;
     margin: auto;
 }
 
 .startButtonContainer{
     background-color:darkred;
-    width: 85%;
+    width: 93%;
     text-align: center;
     margin: auto;
     font-size: 60px;
@@ -32,6 +32,41 @@ body {
 .startButton{
     font-size: 80px;
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
     padding: 20px;
 }
+
+.timerContainer{
+    background-color:darkred;
+    width: 93%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+.questionsContainer{
+    background-color:darkred;
+    width: 93%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: white;
+}
+
+.white {
+    color:white;
+    font-size: 20px;
+}
+
+.question{
+    padding-top: 20px;
+}
+
+input[type="radio"]{
+    margin: 0px 2px 0px 10px;
+  }
